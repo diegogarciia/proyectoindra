@@ -31,5 +31,11 @@ class Evento {
         this.cancelarevento = cancelarevento
     }
 
+    fun anadirasistente(usuario: Usuario) {
+        asistentes.add(usuario)
+    }
 
+    fun anadirinscripcion(inscripcion: Inscripcion) {
+        inscripciones.add(inscripcion)
+    }
 }

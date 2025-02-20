@@ -8,4 +8,15 @@ class Organizador {
         this.contacto = contacto
     }
 
+    fun crearEvento(): Evento {
+        var evento = Factoria.crearEvento()
+        return evento
+    }
+
+    fun modificarEvento(evento: Evento): Evento {
+        var eventomodificado = evento
+
+        return evento
+    }
+
 }

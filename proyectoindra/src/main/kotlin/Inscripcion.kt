@@ -8,4 +8,8 @@ class Inscripcion {
         this.evento = evento
     }
 
+    fun anadirusuario(usuario: Usuario) {
+        usuarios.add(usuario)
+    }
+
 }

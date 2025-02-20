@@ -20,5 +20,14 @@ class Usuario {
         this.cancelarinscripcion = cancelarinscripcion
     }
 
+    fun eventoApuntado(evento: Evento) {
+        eventosapuntados.add(evento)
+    }
+
+    fun inscribirseAEvento() {
+
+
+
+    }
 
 }
