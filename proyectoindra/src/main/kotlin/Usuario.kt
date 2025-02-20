@@ -1,7 +1,7 @@
 class Usuario {
     var nombre = " "
     var correoelectronico = " "
-    var contraseña = " "
+    var contrasenia = " "
     var eventosapuntados = ArrayList<Evento>()
     var cancelarinscripcion = false
 
@@ -15,12 +15,12 @@ class Usuario {
     ) {
         this.nombre = nombre
         this.correoelectronico = correoelectronico
-        this.contraseña = contraseña
+        this.contrasenia = contraseña
         this.eventosapuntados = eventosapuntados
         this.cancelarinscripcion = cancelarinscripcion
     }
 
-    fun eventoApuntado(evento: Evento) {
+    fun eventosApuntado(evento: Evento) {
         eventosapuntados.add(evento)
     }
 
