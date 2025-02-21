@@ -13,9 +13,72 @@ class Organizador {
         return evento
     }
 
-    fun modificarEvento(evento: Evento): Evento {
-        var eventomodificado = evento
-
+    fun modificarEvento(evento: Evento, listaeventos: ArrayList<Evento>): Evento {
+        var bucle = true
+        do {
+            println("¿Qué dato quieres modificar?")
+            println("1. Nombre")
+            println("2. Tipo")
+            println("3. Duracion")
+            println("4. Ubicacion")
+            println("5. Cancelar evento")
+            var opcion = readln().toInt()
+            when(opcion) {
+                1 -> {
+                    Comentarios().preguntaorganizadornuevonombreevento
+                    evento.nombre = readln().toString()
+                    bucle = false
+                }
+                2 -> {
+                    var bucletipo = true
+                    while (bucletipo) {
+                        Comentarios().preguntaorganizadornuevotipoevento
+                        var tipo = readln().toString().uppercase()
+                        if (tipo == Factoria.TIPOEVENTO.values().toString()) {
+                            evento.tipo = Factoria.TIPOEVENTO.values().toString()
+                            bucletipo = false
+                        }  else {
+                            bucletipo
+                        }
+                    }
+                    bucle = false
+                }
+                3 -> {
+                    Comentarios().preguntaorganizadornuevaduracionevento
+                    evento.duracion = readln().toInt()
+                    bucle = false
+                }
+                4 -> {
+                    var bucleubicacion = true
+                    while (bucleubicacion) {
+                        Comentarios().preguntaorganizadornuevaubicaciontipo
+                        evento.ubicacion.tipo = readln().toString().uppercase()
+                        if (evento.tipo == Factoria.TIPOUBICACION.values().toString()) {
+                            evento.tipo = Factoria.TIPOUBICACION.values().toString()
+                            bucleubicacion = false
+                        } else {
+                            bucleubicacion
+                        }
+                    }
+                    Comentarios().preguntaorganizadornuevaubicacionevento
+                    evento.ubicacion.direccion = readln().toString()
+                    bucle = false
+                }
+                5 -> {
+                    var buclecancelarevento = true
+                    while (buclecancelarevento) {
+                        Comentarios().preguntaorganizadorcancelarevento
+                        var respuesta = readln().toString().uppercase()
+                        if (respuesta == "SI") {
+                            listaeventos.remove(evento)
+                        } else {
+                            buclecancelarevento = false
+                        }
+                    }
+                    bucle = false
+                }
+            }
+        } while (bucle)
         return evento
     }
 

@@ -1,11 +1,20 @@
 class Factoria {
     companion object {
         fun crearEvento(): Evento {
+            var bucle = true
             var evento = Evento()
             Comentarios().preguntaeventonombre
             evento.nombre = readln().toString()
-            Comentarios().preguntaeventotipo
-            evento.tipo
+            while (bucle) {
+                Comentarios().preguntaeventotipo
+                evento.tipo = readln().toString().uppercase()
+                if (evento.tipo == TIPOEVENTO.values().toString()) {
+                    evento.tipo = TIPOEVENTO.values().toString()
+                    bucle = false
+                }  else {
+                    bucle
+                }
+            }
             Comentarios().preguntaeventoduracion
             evento.duracion = readln().toInt()
             evento.ubicacion = crearUbicacion()
@@ -13,9 +22,18 @@ class Factoria {
         }
 
         fun crearUbicacion(): Ubicacion {
+            var bucle = true
             var ubicacion = Ubicacion()
-            Comentarios().preguntaubicaciontipo
-            ubicacion.tipo
+            while (bucle) {
+                Comentarios().preguntaubicaciontipo
+                ubicacion.tipo = readln().toString().uppercase()
+                if (ubicacion.tipo == TIPOUBICACION.values().toString()) {
+                    ubicacion.tipo = TIPOUBICACION.values().toString()
+                    bucle = false
+                } else {
+                    bucle
+                }
+            }
             Comentarios().preguntaubicaciondireccion
             ubicacion.direccion = readln().toString()
             return ubicacion
@@ -49,12 +67,12 @@ class Factoria {
         }
     }
 
-    enum class tipoevento {
+    enum class TIPOEVENTO {
         CONFERENCIA,
         TALLER
     }
 
-    enum class tipoubicacion {
+    enum class TIPOUBICACION {
         ONLINE,
         FISICO
     }

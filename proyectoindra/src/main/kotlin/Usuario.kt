@@ -24,10 +24,4 @@ class Usuario {
         eventosapuntados.add(evento)
     }
 
-    fun inscribirseAEvento() {
-
-
-
-    }
-
 }
