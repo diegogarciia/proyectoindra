@@ -83,6 +83,17 @@ main {
     width: 100%;
 }
 
+.explicacion {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+    margin: 50px 0;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+}
+
 .piedepagina {
     background-color: #000000;
     color: white;
@@ -97,8 +108,8 @@ main {
 }
 
 .menu {
-    margin-top: 20%;
-    margin-bottom: 20%;
+    margin-top: 0%;
+    margin-bottom: 25%;
     position: relative;
 }
 
