@@ -21,15 +21,14 @@ body {
 }
 
 header {
-    flex-grow: 2;
+    flex-grow: 1;
     text-align: center;
-    margin-left: 19%;
+    margin-left: 17%;
 }
 
 h1 {
     font-family: 'Lobster', cursive;
     font-style: oblique;
-    margin: 0;
 }
 
 .buttons {
@@ -48,7 +47,7 @@ h1 {
     width: 150px;
     transition: all 0.5s;
     cursor: pointer;
-    margin: 15px;
+    margin: 1%;
 }
 
 button span {
@@ -87,35 +86,75 @@ main {
     background-color: #ffffff;
     color: #000000;
     padding: 20px;
-    margin: 50px 0;
+    margin: 20px 0;
     border-radius: 10px;
     width: 80%;
     max-width: 800px;
     text-align: center;
 }
 
-.piedepagina {
-    background-color: #000000;
-    color: white;
-    padding: 1em;
-    text-align: center;
+.eventos-destacados {
+    margin-top: 5%;
+    margin-right: 60%;
+    color: #ccc;
+}
+
+.contenido-paralelo {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
-    margin-top: 10%;
 }
 
-.copyright {
-    margin-right: 85%;
+.comentarios {
+    margin-top: 3%;
+    margin-right: 5%;
+    color: #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    width: 20%;
+    text-align: center;
 }
 
-.menu {
-    margin-top: 0%;
-    margin-bottom: 25%;
-    position: relative;
+.comentarios form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.comentarios label {
+    text-align: left;
+}
+
+.comentarios input,
+.comentarios textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.comentarios button {
+    align-self: flex-end;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.comentarios button:hover {
+    background-color: #45a049;
 }
 
 .carrusel {
+    margin-top: 3%;
+    margin-left: 5%;
     aspect-ratio: 40/30;
-    width: 600px;
+    width: 30%;
     display: flex;
     overflow: scroll;
     scroll-snap-type: x mandatory;
@@ -128,4 +167,17 @@ main {
     object-fit: cover;
     border-radius: 5px;
     scroll-snap-align: center;
+}
+
+.piedepagina {
+    background-color: #000000;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+    margin-top: 10%;
+}
+
+.copyright {
+    margin-right: 83%;
 }
