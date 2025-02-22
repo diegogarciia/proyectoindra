@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="30a90ff0-1c71-4a13-931b-b3fe1645513a" name="Changes" comment="completar factoria, constantes, comentarios y varias funciones pendientes de varias clases">
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Organizador.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Organizador.kt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2tJcDHZ0Jj7n25zhO5fLoZfYMoO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Merging programacion&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="30a90ff0-1c71-4a13-931b-b3fe1645513a" name="Changes" comment="" />
+      <created>1740073496975</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1740073496975</updated>
+      <workItem from="1740073818247" duration="2000" />
+    </task>
+    <task id="LOCAL-00001" summary="atributos clases">
+      <created>1740075185401</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1740075185401</updated>
+    </task>
+    <task id="LOCAL-00002" summary="estructura de la factoria y varias funciones añadidas">
+      <created>1740076044202</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1740076044202</updated>
+    </task>
+    <task id="LOCAL-00003" summary="implementacion de una seccion de comentarios y completar parte de la factoria">
+      <created>1740087240307</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1740087240307</updated>
+    </task>
+    <task id="LOCAL-00004" summary="completar factoria, constantes, comentarios y varias funciones pendientes de varias clases">
+      <created>1740136376521</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1740136376521</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="clases" />
+    <MESSAGE value="atributos clases" />
+    <MESSAGE value="estructura de la factoria y varias funciones añadidas" />
+    <MESSAGE value="implementacion de una seccion de comentarios y completar parte de la factoria" />
+    <MESSAGE value="completar factoria, constantes, comentarios y varias funciones pendientes de varias clases" />
+    <option name="LAST_COMMIT_MESSAGE" value="completar factoria, constantes, comentarios y varias funciones pendientes de varias clases" />
+  </component>
+</project>
