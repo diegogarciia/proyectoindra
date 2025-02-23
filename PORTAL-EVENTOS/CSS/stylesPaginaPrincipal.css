@@ -5,7 +5,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #171717;
+    background: radial-gradient(125% 125% at 40% 10%, #ccc 10%, #3d405b 100%);
+    z-index: -10;
     width: 100%;
 }
 
@@ -23,7 +24,7 @@ body {
 header {
     flex-grow: 1;
     text-align: center;
-    margin-left: 17%;
+    margin-left: 20%;
 }
 
 h1 {
@@ -80,6 +81,7 @@ main {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    margin-bottom: 20%;
 }
 
 .explicacion {
@@ -96,7 +98,7 @@ main {
 .eventos-destacados {
     margin-top: 5%;
     margin-right: 60%;
-    color: #ccc;
+    color: #000000;
 }
 
 .contenido-paralelo {
@@ -106,9 +108,9 @@ main {
 }
 
 .comentarios {
-    margin-top: 3%;
+    margin-top: 1%;
     margin-right: 5%;
-    color: #ccc;
+    color: #000000;
     padding: 20px;
     border-radius: 10px;
     width: 20%;
@@ -151,7 +153,7 @@ main {
 }
 
 .carrusel {
-    margin-top: 3%;
+    margin-top: 1%;
     margin-left: 5%;
     aspect-ratio: 40/30;
     width: 30%;
@@ -169,6 +171,81 @@ main {
     scroll-snap-align: center;
 }
 
+.boton-todos-eventos {
+    margin-top: 2%;
+    margin-right: 62%;
+}
+
+.boton-todos-eventos button {
+    text-align: center;
+    border-radius: 4px;
+    background-color: #3d405b;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    padding: 16px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 1%;
+}
+
+.calendario {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.calendar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.calendar-header .month {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.calendar-header .year {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.calendar {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calendar th,
+.calendar td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.calendar th {
+    background-color: #f4f4f4;
+}
+
+.calendar td {
+    height: 100px;
+}
+
+
 .piedepagina {
     background-color: #000000;
     color: white;
@@ -176,8 +253,14 @@ main {
     text-align: center;
     width: 100%;
     margin-top: 10%;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    display: flex;
+    gap: 10px;
 }
 
 .copyright {
-    margin-right: 83%;
+    margin-left: 1%;
 }
