@@ -1,1 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: radial-gradient(125% 125% at 40% 10%, #ccc 10%, #3d405b 100%);
+    width: 100%;
+}
+
+.encabezado {
+    color: white;
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.encabezado img {
+    margin-left: 30%;
+}
+
+header {
+    flex-grow: 1;
+    text-align: center;
+}
+
+h1 {
+    color: #000000;
+    font-family: 'Lobster', cursive;
+    font-style: oblique;
+    margin-left: 0%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 6%;
+}
+
+.eventos {
+    width: 60%;
+    margin-bottom: 2em;
+}
+
+.tabla-eventos {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla-eventos th,
+.tabla-eventos td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    vertical-align: middle; 
+}
+
+.tabla-eventos th {
+    background-color: #f4f4f4;
+}
+
+.tabla-eventos img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+}
+
+.piedepagina {
+    color: white;
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    display: flex;
+    gap: 10px;
+}
+
+.copyright {
+    color: #000000;
+    margin-left: 1%;
+}
+
+.redes-sociales {
+    margin-left: 75%;
+}
 
