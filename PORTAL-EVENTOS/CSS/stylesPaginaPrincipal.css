@@ -11,7 +11,6 @@ body {
 }
 
 .encabezado {
-    background-color: #000000;
     color: white;
     padding: 1em;
     text-align: center;
@@ -31,6 +30,7 @@ header {
 }
 
 h1 {
+    color: #000000;
     font-family: 'Lobster', cursive;
     font-style: oblique;
     margin-left: 20%;
@@ -53,31 +53,14 @@ h1 {
     transition: all 0.5s;
     cursor: pointer;
     margin: 1%;
-}
-
-button span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
 }
 
-button span:after {
-    content: '»';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -15px;
-    transition: 0.5s;
-}
-
-button:hover span {
-    padding-right: 15px;
-}
-
-button:hover span:after {
-    opacity: 1;
-    right: 0;
+.encabezado Iniciar-Sesion {
+    margin-right: 10%;
 }
 
 main {
@@ -252,7 +235,6 @@ main .calendario {
 
 
 .piedepagina {
-    background-color: #000000;
     color: white;
     padding: 1em;
     text-align: center;
@@ -266,6 +248,7 @@ main .calendario {
 }
 
 .copyright {
+    color: #000000;
     margin-left: 1%;
 }
 
