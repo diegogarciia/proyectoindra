@@ -32,7 +32,7 @@ h1 {
     color: #000000;
     font-family: 'Lobster', cursive;
     font-style: oblique;
-    margin-left: 20%;
+    margin-left: 0%;
 }
 
 main {
@@ -40,9 +40,52 @@ main {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-top: 3%;
-    margin-bottom: 3%;
+    margin-top: 8%;
+    margin-bottom: 9%;
 }
+
+.formulario {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    padding: 2.5em;
+    border-radius: 25px;
+    transition: .4s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.4) 1px 2px 2px;
+  }
+  
+  .cabecera {
+    color: black;
+    padding-bottom: 2em;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .input {
+    margin-top: 2%;
+    margin-bottom: 10%;
+    border-radius: 5px;
+    border: 1px solid whitesmoke;
+    background-color: whitesmoke;
+    outline: none;
+    padding: 0.7em;
+    transition: .4s ease-in-out;
+  }
+  
+  .formulario .boton-registrarse {
+    margin-top: 2em;
+    align-self: center;
+    padding: 0.7em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 10px;
+    border: none;
+    color: black;
+    transition: .4s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 1px;
+  }
 
 .piedepagina {
     color: white;

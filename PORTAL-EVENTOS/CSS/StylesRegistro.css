@@ -1,1 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: radial-gradient(125% 125% at 40% 10%, #ccc 10%, #3d405b 100%);
+    width: 100%;
+}
 
+.encabezado {
+    color: white;
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.encabezado img {
+    margin-left: 30%;
+}
+
+header {
+    flex-grow: 1;
+    text-align: center;
+}
+
+h1 {
+    color: #000000;
+    font-family: 'Lobster', cursive;
+    font-style: oblique;
+    margin-left: 0%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+
+.formulario {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    padding: 2.5em;
+    border-radius: 25px;
+    transition: .4s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.4) 1px 2px 2px;
+  }
+  
+  .cabecera {
+    color: black;
+    padding-bottom: 2em;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .input {
+    margin-top: 2%;
+    margin-bottom: 10%;
+    border-radius: 5px;
+    border: 1px solid whitesmoke;
+    background-color: whitesmoke;
+    outline: none;
+    padding: 0.7em;
+    transition: .4s ease-in-out;
+  }
+  
+  .formulario .boton-registrarse {
+    margin-top: 2em;
+    align-self: center;
+    padding: 0.7em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 10px;
+    border: none;
+    color: black;
+    transition: .4s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 1px;
+  }
+
+.piedepagina {
+    color: white;
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    display: flex;
+    gap: 10px;
+}
+
+.copyright {
+    color: #000000;
+    margin-left: 1%;
+}
+
+.redes-sociales {
+    margin-left: 75%;
+}
