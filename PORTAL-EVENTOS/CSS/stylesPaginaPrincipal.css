@@ -21,15 +21,19 @@ body {
     align-items: center;
 }
 
+.encabezado img {
+    margin-left: 30%;
+}
+
 header {
     flex-grow: 1;
     text-align: center;
-    margin-left: 20%;
 }
 
 h1 {
     font-family: 'Lobster', cursive;
     font-style: oblique;
+    margin-left: 20%;
 }
 
 .buttons {
@@ -263,4 +267,8 @@ main .calendario {
 
 .copyright {
     margin-left: 1%;
+}
+
+.redes-sociales {
+    margin-left: 75%;
 }
