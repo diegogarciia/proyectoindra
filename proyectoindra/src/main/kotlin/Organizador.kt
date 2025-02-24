@@ -25,14 +25,12 @@ class Organizador {
             var opcion = readln().toInt()
             when(opcion) {
                 1 -> {
-                    Comentarios().preguntaorganizadornuevonombreevento
                     evento.nombre = readln().toString()
                     bucle = false
                 }
                 2 -> {
                     var bucletipo = true
                     while (bucletipo) {
-                        Comentarios().preguntaorganizadornuevotipoevento
                         var tipo = readln().toString().uppercase()
                         if (tipo == Factoria.TIPOEVENTO.values().toString()) {
                             evento.tipo = Factoria.TIPOEVENTO.values().toString()
@@ -44,14 +42,12 @@ class Organizador {
                     bucle = false
                 }
                 3 -> {
-                    Comentarios().preguntaorganizadornuevaduracionevento
                     evento.duracion = readln().toInt()
                     bucle = false
                 }
                 4 -> {
                     var bucleubicacion = true
                     while (bucleubicacion) {
-                        Comentarios().preguntaorganizadornuevaubicaciontipo
                         evento.ubicacion.tipo = readln().toString().uppercase()
                         if (evento.tipo == Factoria.TIPOUBICACION.values().toString()) {
                             evento.tipo = Factoria.TIPOUBICACION.values().toString()
@@ -60,14 +56,12 @@ class Organizador {
                             bucleubicacion
                         }
                     }
-                    Comentarios().preguntaorganizadornuevaubicacionevento
                     evento.ubicacion.direccion = readln().toString()
                     bucle = false
                 }
                 5 -> {
                     var buclecancelarevento = true
                     while (buclecancelarevento) {
-                        Comentarios().preguntaorganizadorcancelarevento
                         var respuesta = readln().toString().uppercase()
                         if (respuesta == "SI") {
                             listaeventos.remove(evento)
