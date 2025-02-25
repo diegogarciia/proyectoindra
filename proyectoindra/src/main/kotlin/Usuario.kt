@@ -20,8 +20,12 @@ class Usuario {
         this.cancelarinscripcion = cancelarinscripcion
     }
 
-    fun eventosApuntado(evento: Evento) {
+    fun anadirEventosApuntado(evento: Evento) {
         eventosapuntados.add(evento)
+    }
+
+    override fun toString(): String {
+        return "Usuario(nombre = '$nombre', correoelectronico = '$correoelectronico')"
     }
 
 }

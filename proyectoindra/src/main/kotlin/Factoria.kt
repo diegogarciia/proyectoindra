@@ -1,58 +1,66 @@
+import java.util.*
+
 class Factoria {
     companion object {
         fun crearEvento(): Evento {
-            var bucle = true
-            var evento = Evento()
-            evento.nombre = readln().toString()
-            while (bucle) {
-                evento.tipo = readln().toString().uppercase()
-                if (evento.tipo == TIPOEVENTO.values().toString()) {
-                    evento.tipo = TIPOEVENTO.values().toString()
-                    bucle = false
-                }  else {
-                    bucle
-                }
-            }
-            evento.duracion = readln().toInt()
+            val evento = Evento()
+            evento.nombre = generarNombreAleatorio()
+            evento.tipo = TIPOEVENTO.values().random().name
+            evento.duracion = Constantes().randomHorasEvento() // Duración aleatoria entre 1 y 8 horas
+            evento.fecha = generarFechaAleatoria()
             evento.ubicacion = crearUbicacion()
             return evento
         }
 
         fun crearUbicacion(): Ubicacion {
-            var bucle = true
-            var ubicacion = Ubicacion()
-            while (bucle) {
-                ubicacion.tipo = readln().toString().uppercase()
-                if (ubicacion.tipo == TIPOUBICACION.values().toString()) {
-                    ubicacion.tipo = TIPOUBICACION.values().toString()
-                    bucle = false
-                } else {
-                    bucle
-                }
-            }
-            ubicacion.direccion = readln().toString()
+            val ubicacion = Ubicacion()
+            ubicacion.tipo = TIPOUBICACION.values().random().name
+            ubicacion.direccion = generarDireccionAleatoria()
             return ubicacion
         }
 
         fun crearUsuario(): Usuario {
-            var usuario = Usuario()
-            usuario.nombre = readln().toString()
-            usuario.correoelectronico = readln().toString()
-            usuario.contrasenia = readln().toString()
+            val nombres = listOf("Laura", "Carlos", "Elena", "Pedro", "Ana", "David")
+            val dominios = listOf("gmail.com", "hotmail.com", "outlook.com")
+            val nombre = nombres.random()
+            val email = "$nombre${Constantes().random1A100()}@${dominios.random()}"
+
+            val usuario = Usuario()
+            usuario.nombre = nombre
+            usuario.correoelectronico = email
+            usuario.contrasenia = "${nombre}123"
             return usuario
         }
 
         fun crearOrganizador(): Organizador {
-            var organizador = Organizador()
-            organizador.nombre = readln().toString()
-            organizador.contacto = readln().toString()
+            val organizador = Organizador()
+            organizador.nombre = "Organizador ${(Constantes().random1A100())}"
+            organizador.contacto = "${organizador.nombre}@${Constantes().random1A100()}@email.com"
             return organizador
         }
 
-        fun crearInscripcion(): Inscripcion {
-            var inscripcion = Inscripcion()
-            inscripcion.evento = readln().toString()
+        fun crearInscripcion(evento: Evento): Inscripcion {
+            val inscripcion = Inscripcion()
+            inscripcion.evento = evento.nombre
             return inscripcion
+        }
+
+        fun generarNombreAleatorio(): String {
+            val prefijos = listOf("Mega", "Ultra", "Super", "Tech", "Innovative")
+            val sufijos = listOf("Summit", "Hackathon", "Conference", "Workshop", "Expo")
+            return "${prefijos.random()} ${sufijos.random()}"
+        }
+
+        fun generarDireccionAleatoria(): String {
+            val calles = listOf("Calle Mayor", "Avenida Central", "Plaza del Sol", "Gran Vía", "Paseo de Gracia")
+            val numero = Constantes().random1A100()
+            return "${calles.random()} $numero"
+        }
+
+        fun generarFechaAleatoria(): Date {
+            val calendar = Calendar.getInstance()
+            calendar.add(Calendar.DAY_OF_YEAR, Constantes().random1A365())
+            return calendar.time
         }
     }
 
@@ -65,5 +73,4 @@ class Factoria {
         ONLINE,
         FISICO
     }
-
 }

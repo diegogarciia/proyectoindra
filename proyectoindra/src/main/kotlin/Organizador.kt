@@ -76,4 +76,8 @@ class Organizador {
         return evento
     }
 
+    override fun toString(): String {
+        return "Organizador(nombre = '$nombre', contacto = '$contacto')"
+    }
+
 }

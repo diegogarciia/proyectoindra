@@ -8,4 +8,8 @@ class Ubicacion {
         this.direccion = direccion
     }
 
+    override fun toString(): String {
+        return "Ubicacion(tipo = '$tipo', direccion = '$direccion')"
+    }
+
 }

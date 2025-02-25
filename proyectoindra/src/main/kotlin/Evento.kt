@@ -38,4 +38,9 @@ class Evento {
     fun anadirinscripcion(inscripcion: Inscripcion) {
         inscripciones.add(inscripcion)
     }
+
+    override fun toString(): String {
+        return "Evento(nombre = '$nombre', tipo = '$tipo', fecha = $fecha, duracion = $duracion horas, ubicacion = $ubicacion, inscripciones = $inscripciones)"
+    }
+
 }

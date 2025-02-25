@@ -12,4 +12,8 @@ class Inscripcion {
         usuarios.add(usuario)
     }
 
+    override fun toString(): String {
+        return "Inscripcion(usuarios = $usuarios, evento = '$evento')"
+    }
+
 }
